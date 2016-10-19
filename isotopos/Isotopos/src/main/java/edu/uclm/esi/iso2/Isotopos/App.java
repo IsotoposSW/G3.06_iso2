@@ -1,7 +1,7 @@
 package edu.uclm.esi.iso2.Isotopos;
 
 /**
- * Hello world!
+ * Otra prueba.
  *
  */
 public class App 
