@@ -1,7 +1,7 @@
 package org.Multas;
 
 /**
- * Hello world!
+ * Mensaje de prueba
  *
  */
 public class App 
