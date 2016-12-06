@@ -36,10 +36,15 @@ public class Manager {
 	 * @param maxSpeed: max speed in the controlled point
 	 */
 	public int openInquiry(String license, double speed, String location, double maxSpeed) {
+		
+		System.out.println(license, speed, location, maxSpeed);
+		
+		
 		Inquiry inquiry=new Inquiry(license, speed, location, maxSpeed);
 		GeneralDao<Inquiry> dao=new GeneralDao<>();
 		dao.insert(inquiry);
 		return inquiry.getId();
+		
 	}
 	
 	/**

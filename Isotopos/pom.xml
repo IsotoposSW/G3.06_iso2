@@ -27,4 +27,13 @@
     <module>Radar</module>
     <module>Interfaz</module>
   </modules>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>edu.uclm.esi.iso2</groupId>
+  			<artifactId>multass</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>
