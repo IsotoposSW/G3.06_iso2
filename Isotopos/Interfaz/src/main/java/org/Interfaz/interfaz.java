@@ -101,6 +101,7 @@ public class interfaz extends JFrame {
 				*/
 				
 				// Sanction identifyDriver(int fieldIDSancion, String field1DNI)
+				
 			}
 		});
 		btnAplicar_2.setBounds(67, 207, 97, 25);
@@ -194,4 +195,6 @@ public class interfaz extends JFrame {
 		btnAplicar.setBounds(82, 229, 97, 25);
 		panelPropietario.add(btnAplicar);
 	}
+	
+
 }
