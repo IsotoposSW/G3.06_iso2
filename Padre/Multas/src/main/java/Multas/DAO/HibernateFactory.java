@@ -1,4 +1,4 @@
-package Multas;
+package Multas.DAO;
 
 import org.hibernate.*;
 

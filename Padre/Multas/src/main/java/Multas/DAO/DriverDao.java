@@ -1,9 +1,9 @@
-package Multas;
+package Multas.DAO;
 
 import org.hibernate.HibernateException;
 import javax.persistence.Query;
 
-import Multas.Driver;
+import Multas.Domain.Driver;
 
 public class DriverDao extends GeneralDao<Driver> {
 	public DriverDao() {
@@ -14,7 +14,7 @@ public class DriverDao extends GeneralDao<Driver> {
 		Driver driver = null;
         try {
             startOperation();
-            Query query=session.createQuery("from Driver where dni=?");
+            Query query=(Query) session.createQuery("from Driver where dni=?");
             query.setParameter(0, dni);
             driver = (Driver) query.getSingleResult();
             transaction.commit();

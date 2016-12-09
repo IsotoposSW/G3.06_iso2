@@ -3,6 +3,9 @@
 	<name>Padre</name>
 	<comment></comment>
 	<projects>
+		<project>Interfaz</project>
+		<project>Multas</project>
+		<project>Radar</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

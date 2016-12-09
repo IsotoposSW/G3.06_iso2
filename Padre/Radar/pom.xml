@@ -5,11 +5,10 @@
   <parent>
     <groupId>Isotopos</groupId>
     <artifactId>Padre</artifactId>
-    <version>0.17.2-SNAPSHOT</version>
+    <version>0.17.3-SNAPSHOT</version>
   </parent>
-  <groupId>Isotopos</groupId>
   <artifactId>Radar</artifactId>
-  <version>0.3.1-SNAPSHOT</version>
+  <version>0.3.2-SNAPSHOT</version>
   <name>Radar</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -25,7 +24,8 @@
     <dependency>
     	<groupId>Isotopos</groupId>
     	<artifactId>Multas</artifactId>
-    	<version>1.0.2-SNAPSHOT</version>
+    	<version>1.0.3-SNAPSHOT</version>
     </dependency>
   </dependencies>
+  <groupId>Isotopos</groupId>
 </project>

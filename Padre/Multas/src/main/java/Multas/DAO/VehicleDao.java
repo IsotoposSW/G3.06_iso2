@@ -1,9 +1,9 @@
-package Multas;
+package Multas.DAO;
 
 import org.hibernate.HibernateException;
 import javax.persistence.Query;
 
-import Multas.Vehicle;
+import Multas.Domain.Vehicle;
 
 public class VehicleDao extends GeneralDao<Vehicle> {
 	public VehicleDao() {
@@ -14,7 +14,7 @@ public class VehicleDao extends GeneralDao<Vehicle> {
 		Vehicle vehicle = null;
         try {
             startOperation();
-            Query query=session.createQuery("from Vehicle where license=?");
+            Query query=(Query) session.createQuery("from Vehicle where license=?");
             query.setParameter(0, license);
             vehicle = (Vehicle) query.getSingleResult();
             transaction.commit();

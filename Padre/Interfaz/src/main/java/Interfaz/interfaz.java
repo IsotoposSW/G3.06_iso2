@@ -4,6 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import Radar.Radar;
+import Multas.Domain.Manager;
+import Multas.Domain.Manager.ManagerHolder;
+import Multas.Domain.Sanction;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -26,6 +29,7 @@ public class interfaz extends JFrame {
 	private JTextField FieldCantidad;
 	private JTextField fieldIDSancion;
 	private JTextField field1DNI;
+	ManagerHolder managerholder = new ManagerHolder();
 
 	/**
 	 * Launch the application.
@@ -93,16 +97,14 @@ public class interfaz extends JFrame {
 		JButton btnAplicar_2 = new JButton("Aplicar");
 		btnAplicar_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-								/*
+				int i=0;				
 				try {
-				int i = Integer.parseInt(fieldIDSancion.getText());
+				 i = Integer.parseInt(fieldIDSancion.getText());
 				   }
 				catch (NumberFormatException x) {
 				}
-				
-				*/
-				
-				// Sanction identifyDriver(int fieldIDSancion, String field1DNI)
+				Sanction sanction = new Sanction();
+				sanction =  managerholder.manager.identifyDriver(i, field1DNI.getText());
 				
 			}
 		});
@@ -128,8 +130,7 @@ public class interfaz extends JFrame {
 		JButton btnComprobar = new JButton("Comprobar");
 		btnComprobar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// Mostrar el coste de la sancion 
-				// buscar sanctionHolder_id==fieldIDsancion.getText() , escribir amount en fieldCantidad y habilitar btnAplicar2
+				
 				FieldCantidad.setText("200");
 							}
 		});
@@ -139,15 +140,14 @@ public class interfaz extends JFrame {
 		JButton btnAplicar_1 = new JButton("Aplicar");
 		btnAplicar_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*
+				int i = 0;;
 				try {
-				int i = Integer.parseInt(fieldIDSancion.getText());
+				 i = Integer.parseInt(fieldIDSancion.getText());
 				   }
 				catch (NumberFormatException x) {
 				}
 				
-				*/
-				// pay(int FieldIDSancion);
+				ManagerHolder.manager.pay(i);
 			}
 		});
 		btnAplicar_1.setBounds(73, 229, 97, 25);
@@ -185,7 +185,7 @@ public class interfaz extends JFrame {
 		JLabel lblDni = new JLabel("DNI");
 		lblDni.setBounds(18, 168, 56, 16);
 		panelPropietario.add(lblDni);
-		// Cambio de proprietario
+		// Cambio de propietario
 		JButton btnAplicar = new JButton("Aplicar");
 		btnAplicar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

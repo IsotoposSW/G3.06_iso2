@@ -2,7 +2,7 @@ package Radar;
 import java.util.Random;
 import java.text.DecimalFormat;
 
-import Multas.Manager;
+import Multas.Domain.Manager;
 
 public class Radar {
 	

@@ -1,4 +1,4 @@
-package Multas;
+package Multas.Domain;
 
 import java.util.HashSet;
 import java.util.Set;

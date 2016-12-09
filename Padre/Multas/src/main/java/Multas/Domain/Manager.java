@@ -1,9 +1,9 @@
-package Multas;
+package Multas.Domain;
 
-import Multas.DriverDao;
-import Multas.GeneralDao;
-import Multas.OwnerDao;
-import Multas.VehicleDao;
+import Multas.DAO.DriverDao;
+import Multas.DAO.GeneralDao;
+import Multas.DAO.OwnerDao;
+import Multas.DAO.VehicleDao;
 
 /**
  * This class is the access point to the business logic.

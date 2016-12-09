@@ -1,4 +1,4 @@
-package Multas;
+package Multas.Domain;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

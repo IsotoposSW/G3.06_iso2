@@ -1,4 +1,4 @@
-package Multas;
+package Multas.Domain;
 
 import java.util.Date;
 
@@ -13,9 +13,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import Multas.DriverDao;
-import Multas.GeneralDao;
-import Multas.OwnerDao;
+import Multas.Domain.Sanction;
+import Multas.DAO.DriverDao;
+import Multas.DAO.GeneralDao;
+import Multas.DAO.OwnerDao;
 
 @Entity
 @Table

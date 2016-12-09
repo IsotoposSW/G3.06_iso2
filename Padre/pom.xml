@@ -3,29 +3,29 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Isotopos</groupId>
   <artifactId>Padre</artifactId>
-  <version>0.17.2-SNAPSHOT</version>
+  <version>0.17.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Padre</name>
   <modules>
-    <module>Interfaz</module>
-    <module>Radar</module>
-    <module>Multas</module>
+  	<module>Interfaz</module>
+  	<module>Multas</module>
+  	<module>Radar</module>
   </modules>
   <dependencies>
   	<dependency>
   		<groupId>Isotopos</groupId>
   		<artifactId>Interfaz</artifactId>
-  		<version>0.2.1-SNAPSHOT</version>
+  		<version>0.2.2-SNAPSHOT</version>
   	</dependency>
   	<dependency>
   		<groupId>Isotopos</groupId>
   		<artifactId>Radar</artifactId>
-  		<version>0.3.1-SNAPSHOT</version>
+  		<version>0.3.2-SNAPSHOT</version>
   	</dependency>
   	<dependency>
   		<groupId>Isotopos</groupId>
   		<artifactId>Multas</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>1.0.3-SNAPSHOT</version>
   	</dependency>
   </dependencies>
 </project>
