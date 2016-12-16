@@ -65,6 +65,7 @@ public class interfaz extends JFrame {
 				radar.abrirInvestigacion();
 			}
 		});
+		
 		btnSimularCoche.setBounds(417, 211, 133, 62);
 		contentPane.add(btnSimularCoche);
 		
@@ -93,6 +94,7 @@ public class interfaz extends JFrame {
 		field1DNI.setBounds(112, 97, 116, 22);
 		panelIdentificar.add(field1DNI);
 		field1DNI.setColumns(10);
+		
 		//Identificar Conductor
 		JButton btnAplicar_2 = new JButton("Aplicar");
 		btnAplicar_2.addActionListener(new ActionListener() {
@@ -108,6 +110,7 @@ public class interfaz extends JFrame {
 				
 			}
 		});
+		
 		btnAplicar_2.setBounds(67, 207, 97, 25);
 		panelIdentificar.add(btnAplicar_2);
 		
@@ -125,15 +128,14 @@ public class interfaz extends JFrame {
 		panelPago.add(lblSancion);
 		
 		// Pagar Sancion
-		
-		
 		JButton btnComprobar = new JButton("Comprobar");
 		btnComprobar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				FieldCantidad.setText("200");
-							}
+			}
 		});
+		
 		btnComprobar.setBounds(73, 64, 97, 25);
 		panelPago.add(btnComprobar);
 		
@@ -150,6 +152,7 @@ public class interfaz extends JFrame {
 				ManagerHolder.manager.pay(i);
 			}
 		});
+		
 		btnAplicar_1.setBounds(73, 229, 97, 25);
 		panelPago.add(btnAplicar_1);
 		
@@ -185,15 +188,18 @@ public class interfaz extends JFrame {
 		JLabel lblDni = new JLabel("DNI");
 		lblDni.setBounds(18, 168, 56, 16);
 		panelPropietario.add(lblDni);
+		
 		// Cambio de propietario
 		JButton btnAplicar = new JButton("Aplicar");
 		btnAplicar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				// changeOwner(String license, String newDni)
+				String matricula = fieldLicense.getText();
+				String dni = fieldDNI.getText();
+				managerholder.manager.changeOwner(matricula, dni);
 			   
 			}
 		});
+		
 		btnAplicar.setBounds(82, 229, 97, 25);
 		panelPropietario.add(btnAplicar);
 	}
